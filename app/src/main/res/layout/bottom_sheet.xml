@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="5dp"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="80dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <TextView
+        android:id="@+id/bottomKeywordTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@drawable/bg_keyword"
+        android:padding="10dp"
+        android:text="keyword"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/bottomDataEdtTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" i am the best to come here lola man"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
